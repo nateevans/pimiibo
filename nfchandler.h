@@ -9,6 +9,7 @@ class NFCHandler {
 public:
   NFCHandler();
   void readTagUUID(uint8_t uuidBuffer[]);
+  void readAmiibo();
   void writeAmiibo(Amiibo *amiibo);
 
 private:
