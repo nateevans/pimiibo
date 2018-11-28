@@ -78,7 +78,7 @@ void NFCHandler::readAmiibo() {
     Amiitool::shared()->printHex(target.nti.nai.abtAtqa, 2);
 
     printf("Read SAK: ");
-    Amiitool::shared()->printHex(target.nti.nai.btSak, 1);
+    printf("%02x\n", target.nti.nai.btSak);
   }
 }
 
